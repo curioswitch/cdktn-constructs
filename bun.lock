@@ -5,7 +5,7 @@
     "": {
       "name": "@curioswitch/cdktf-constructs",
       "devDependencies": {
-        "@biomejs/biome": "^2.0.0",
+        "@biomejs/biome": "^2.4.12",
         "@cdktn/provider-github": "^16.0.0",
         "@cdktn/provider-google": "^17.0.0",
         "@cdktn/provider-google-beta": "^17.0.0",

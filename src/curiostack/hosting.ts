@@ -1,12 +1,13 @@
+import { ProjectIamCustomRole } from "@cdktn/provider-google/lib/project-iam-custom-role/index.js";
+import { ProjectIamMember } from "@cdktn/provider-google/lib/project-iam-member/index.js";
+import { ServiceAccount } from "@cdktn/provider-google/lib/service-account/index.js";
+import { ServiceAccountIamMember } from "@cdktn/provider-google/lib/service-account-iam-member/index.js";
 import { GoogleFirebaseHostingCustomDomain } from "@cdktn/provider-google-beta/lib/google-firebase-hosting-custom-domain/index.js";
 import { GoogleFirebaseHostingSite } from "@cdktn/provider-google-beta/lib/google-firebase-hosting-site/index.js";
 import { GoogleFirebaseWebApp } from "@cdktn/provider-google-beta/lib/google-firebase-web-app/index.js";
-import { ProjectIamCustomRole } from "@cdktn/provider-google/lib/project-iam-custom-role/index.js";
-import { ProjectIamMember } from "@cdktn/provider-google/lib/project-iam-member/index.js";
-import { ServiceAccountIamMember } from "@cdktn/provider-google/lib/service-account-iam-member/index.js";
-import { ServiceAccount } from "@cdktn/provider-google/lib/service-account/index.js";
 import { type ITerraformDependable, TerraformOutput } from "cdktn";
 import { Construct } from "constructs";
+
 import type { CurioStack } from "./index.js";
 
 export interface CurioStackHostingConfig {
