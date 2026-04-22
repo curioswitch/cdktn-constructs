@@ -2,15 +2,15 @@ import {
   GoogleCloudRunV2Service,
   type GoogleCloudRunV2ServiceTemplateContainersEnv,
   type GoogleCloudRunV2ServiceTemplateScaling,
-} from "@cdktf/provider-google-beta/lib/google-cloud-run-v2-service/index.js";
-import { CloudRunServiceIamMember } from "@cdktf/provider-google/lib/cloud-run-service-iam-member/index.js";
-import { ProjectIamMember } from "@cdktf/provider-google/lib/project-iam-member/index.js";
-import { SecretManagerSecretIamMember } from "@cdktf/provider-google/lib/secret-manager-secret-iam-member/index.js";
-import type { SecretManagerSecretVersion } from "@cdktf/provider-google/lib/secret-manager-secret-version/index.js";
-import { ServiceAccountIamMember } from "@cdktf/provider-google/lib/service-account-iam-member/index.js";
-import { ServiceAccount } from "@cdktf/provider-google/lib/service-account/index.js";
-import { StorageBucketIamMember } from "@cdktf/provider-google/lib/storage-bucket-iam-member/index.js";
-import type { ITerraformDependable } from "cdktf";
+} from "@cdktn/provider-google-beta/lib/google-cloud-run-v2-service/index.js";
+import { CloudRunServiceIamMember } from "@cdktn/provider-google/lib/cloud-run-service-iam-member/index.js";
+import { ProjectIamMember } from "@cdktn/provider-google/lib/project-iam-member/index.js";
+import { SecretManagerSecretIamMember } from "@cdktn/provider-google/lib/secret-manager-secret-iam-member/index.js";
+import type { SecretManagerSecretVersion } from "@cdktn/provider-google/lib/secret-manager-secret-version/index.js";
+import { ServiceAccountIamMember } from "@cdktn/provider-google/lib/service-account-iam-member/index.js";
+import { ServiceAccount } from "@cdktn/provider-google/lib/service-account/index.js";
+import { StorageBucketIamMember } from "@cdktn/provider-google/lib/storage-bucket-iam-member/index.js";
+import type { ITerraformDependable } from "cdktn";
 import { Construct } from "constructs";
 import type { CurioStack } from "./index.js";
 
