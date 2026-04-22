@@ -40,6 +40,9 @@ export interface CurioStackConfig {
    */
   terraformViewerServiceAccountId?: string;
 
+  /** Whether the identity platform should be multi-tenant. Defaults to `false`. */
+  identityMultiTenant?: boolean;
+
   /** The google-beta provider to use to provision beta configuration of GCP projects. */
   googleBeta: TerraformProvider;
 }
@@ -66,6 +69,9 @@ export class CurioStack extends Construct {
   /** The bucket containing OTel configs. */
   public readonly otelBucket: StorageBucket;
 
+  /** The provisioned identity platform configuration. */
+  public readonly identity: Identity;
+
   /** The configuration of the CurioStack. */
   public readonly config: CurioStackConfig;
 
@@ -84,7 +90,7 @@ export class CurioStack extends Construct {
     this.runService = apps.runService;
     this.otelBucket = apps.otelBucket;
 
-    new Identity(this, config);
+    this.identity = new Identity(this, config);
   }
 }
 
@@ -213,6 +219,9 @@ class Apps extends Construct {
 }
 
 class Identity extends Construct {
+  /** The provisioned identity platform configuration. */
+  public readonly platform: IdentityPlatformConfig;
+
   constructor(scope: Construct, config: CurioStackConfig) {
     super(scope, "identity");
 
@@ -220,7 +229,7 @@ class Identity extends Construct {
       service: "identitytoolkit.googleapis.com",
     });
 
-    new IdentityPlatformConfig(this, "identity-platform", {
+    this.platform = new IdentityPlatformConfig(this, "identity-platform", {
       signIn: {
         // Enable email since it is almost always needed for integration tests or QA,
         // i.e., user+test123@domain.com.
@@ -234,6 +243,11 @@ class Identity extends Construct {
         `${config.project}.web.app`,
         `${config.project}.firebaseapp.com`,
       ],
+      multiTenant: config.identityMultiTenant
+        ? {
+            allowTenants: true,
+          }
+        : undefined,
       dependsOn: [service],
     });
 
