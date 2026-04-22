@@ -1,14 +1,14 @@
 import path from "node:path";
 
-import { DataGoogleIamWorkloadIdentityPool } from "@cdktn/provider-google-beta/lib/data-google-iam-workload-identity-pool/index.js";
-import { ArtifactRegistryRepositoryIamMember } from "@cdktn/provider-google/lib/artifact-registry-repository-iam-member/index.js";
 import { ArtifactRegistryRepository } from "@cdktn/provider-google/lib/artifact-registry-repository/index.js";
+import { ArtifactRegistryRepositoryIamMember } from "@cdktn/provider-google/lib/artifact-registry-repository-iam-member/index.js";
 import { IdentityPlatformConfig } from "@cdktn/provider-google/lib/identity-platform-config/index.js";
 import { ProjectIamCustomRole } from "@cdktn/provider-google/lib/project-iam-custom-role/index.js";
 import { ProjectIamMember } from "@cdktn/provider-google/lib/project-iam-member/index.js";
 import { ProjectService } from "@cdktn/provider-google/lib/project-service/index.js";
-import { StorageBucketObject } from "@cdktn/provider-google/lib/storage-bucket-object/index.js";
 import { StorageBucket } from "@cdktn/provider-google/lib/storage-bucket/index.js";
+import { StorageBucketObject } from "@cdktn/provider-google/lib/storage-bucket-object/index.js";
+import { DataGoogleIamWorkloadIdentityPool } from "@cdktn/provider-google-beta/lib/data-google-iam-workload-identity-pool/index.js";
 import { Fn, type TerraformProvider } from "cdktn";
 import { Construct } from "constructs";
 
