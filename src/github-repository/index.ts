@@ -1,17 +1,17 @@
-import { RepositoryEnvironmentDeploymentPolicy } from "@cdktf/provider-github/lib/repository-environment-deployment-policy/index.js";
+import { RepositoryEnvironmentDeploymentPolicy } from "@cdktn/provider-github/lib/repository-environment-deployment-policy/index.js";
 import {
   RepositoryEnvironment,
   type RepositoryEnvironmentConfig,
-} from "@cdktf/provider-github/lib/repository-environment/index.js";
+} from "@cdktn/provider-github/lib/repository-environment/index.js";
 import {
   RepositoryRuleset,
   type RepositoryRulesetConfig,
-} from "@cdktf/provider-github/lib/repository-ruleset/index.js";
+} from "@cdktn/provider-github/lib/repository-ruleset/index.js";
 import {
   Repository,
   type RepositoryConfig,
-} from "@cdktf/provider-github/lib/repository/index.js";
-import { TeamRepository } from "@cdktf/provider-github/lib/team-repository/index.js";
+} from "@cdktn/provider-github/lib/repository/index.js";
+import { TeamRepository } from "@cdktn/provider-github/lib/team-repository/index.js";
 import { Construct } from "constructs";
 
 export interface GitHubRepositoryConfig {

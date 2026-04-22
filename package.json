@@ -1,5 +1,5 @@
 {
-  "name": "@curioswitch/cdktf-constructs",
+  "name": "@curioswitch/cdktn-constructs",
   "version": "0.0.1",
   "license": "MIT",
   "type": "module",
@@ -11,17 +11,24 @@
     "lint": "biome check . && prettier --check '**/*.yaml' '**/*.md'"
   },
   "packageManager": "bun@1.2.2",
-  "dependencies": {
-    "@cdktf/provider-github": "^14.5.0",
-    "@cdktf/provider-google": "^14.19.0",
-    "@cdktf/provider-google-beta": "^14.19.0",
-    "@cdktf/provider-random": "^11.1.0",
-    "cdktf": "^0.20.11",
-    "constructs": "^10.4.2"
+  "peerDependencies": {
+    "@cdktn/provider-github": "^16.0.0",
+    "@cdktn/provider-google": "^17.0.0",
+    "@cdktn/provider-google-beta": "^17.0.0",
+    "@cdktn/provider-random": "^13.0.0",
+    "cdktn": "^0.23.0-pre.29",
+    "constructs": "^10.6.0"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@cdktn/provider-github": "^16.0.0",
+    "@cdktn/provider-google": "^17.0.0",
+    "@cdktn/provider-google-beta": "^17.0.0",
+    "@cdktn/provider-random": "^13.0.0",
     "@types/node": "^22.13.1",
-    "prettier": "^3.5.0"
+    "cdktn": "^0.23.0-pre.29",
+    "constructs": "^10.6.0",
+    "prettier": "^3.5.0",
+    "typescript": "^6.0.3"
   }
 }

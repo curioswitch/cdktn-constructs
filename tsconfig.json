@@ -8,7 +8,8 @@
     "module": "Node16",
     "noEmit": true,
     "moduleResolution": "Node16",
-    "lib": ["ESNext"]
+    "lib": ["ESNext"],
+    "types": ["node"]
   },
   "exclude": ["node_modules", "dist"]
 }

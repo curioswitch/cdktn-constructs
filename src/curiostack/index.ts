@@ -1,14 +1,15 @@
 import path from "node:path";
-import { DataGoogleIamWorkloadIdentityPool } from "@cdktf/provider-google-beta/lib/data-google-iam-workload-identity-pool/index.js";
-import { ArtifactRegistryRepositoryIamMember } from "@cdktf/provider-google/lib/artifact-registry-repository-iam-member/index.js";
-import { ArtifactRegistryRepository } from "@cdktf/provider-google/lib/artifact-registry-repository/index.js";
-import { IdentityPlatformConfig } from "@cdktf/provider-google/lib/identity-platform-config/index.js";
-import { ProjectIamCustomRole } from "@cdktf/provider-google/lib/project-iam-custom-role/index.js";
-import { ProjectIamMember } from "@cdktf/provider-google/lib/project-iam-member/index.js";
-import { ProjectService } from "@cdktf/provider-google/lib/project-service/index.js";
-import { StorageBucketObject } from "@cdktf/provider-google/lib/storage-bucket-object/index.js";
-import { StorageBucket } from "@cdktf/provider-google/lib/storage-bucket/index.js";
-import { Fn, type TerraformProvider } from "cdktf";
+
+import { DataGoogleIamWorkloadIdentityPool } from "@cdktn/provider-google-beta/lib/data-google-iam-workload-identity-pool/index.js";
+import { ArtifactRegistryRepositoryIamMember } from "@cdktn/provider-google/lib/artifact-registry-repository-iam-member/index.js";
+import { ArtifactRegistryRepository } from "@cdktn/provider-google/lib/artifact-registry-repository/index.js";
+import { IdentityPlatformConfig } from "@cdktn/provider-google/lib/identity-platform-config/index.js";
+import { ProjectIamCustomRole } from "@cdktn/provider-google/lib/project-iam-custom-role/index.js";
+import { ProjectIamMember } from "@cdktn/provider-google/lib/project-iam-member/index.js";
+import { ProjectService } from "@cdktn/provider-google/lib/project-service/index.js";
+import { StorageBucketObject } from "@cdktn/provider-google/lib/storage-bucket-object/index.js";
+import { StorageBucket } from "@cdktn/provider-google/lib/storage-bucket/index.js";
+import { Fn, type TerraformProvider } from "cdktn";
 import { Construct } from "constructs";
 
 export * from "./hosting.js";
