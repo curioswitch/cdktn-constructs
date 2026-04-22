@@ -20,7 +20,7 @@
     "constructs": "^10.6.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.0.0",
     "@cdktn/provider-github": "^16.0.0",
     "@cdktn/provider-google": "^17.0.0",
     "@cdktn/provider-google-beta": "^17.0.0",
