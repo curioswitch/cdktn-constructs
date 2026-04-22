@@ -15,6 +15,7 @@ import { StorageBucketIamMember } from "@cdktn/provider-google/lib/storage-bucke
 import { GoogleFirebaseProject } from "@cdktn/provider-google-beta/lib/google-firebase-project/index.js";
 import type { GoogleBetaProvider } from "@cdktn/provider-google-beta/lib/provider/index.js";
 import {
+  Fn,
   type ITerraformDependable,
   TerraformIterator,
   TerraformOutput,
@@ -288,11 +289,16 @@ export class GcpProject extends Construct {
         roleId: "iamPolicyViewer",
         title: "IAM Policy Viewer",
         project: this.project.projectId,
-        permissions: TerraformIterator.fromList(
-          testablePermissions.permissions,
-        ).forExpressionForList(
-          'val.name if endswith(val.name, ".getIamPolicy")',
-        ) as unknown as string[], // Type definnition not correct
+        permissions: Fn.concat([
+          TerraformIterator.fromList(
+            testablePermissions.permissions,
+          ).forExpressionForList(
+            'val.name if endswith(val.name, ".getIamPolicy")',
+          ),
+          // We only get project-testable permissions dynamically and some aren't.
+          // Hard-code useful services.
+          ["cloudtasks.queues.getIamPolicy"],
+        ]),
       },
     );
 
