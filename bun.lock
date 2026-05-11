@@ -9,7 +9,7 @@
         "@cdktn/provider-github": "^16.0.0",
         "@cdktn/provider-google": "^17.0.0",
         "@cdktn/provider-google-beta": "^17.0.0",
-        "@cdktn/provider-random": "^13.0.0",
+        "@cdktn/provider-random": "^14.0.0",
         "@types/node": "^25.0.0",
         "cdktn": "^0.23.0-pre.29",
         "constructs": "^10.6.0",
@@ -51,7 +51,7 @@
 
     "@cdktn/provider-google-beta": ["@cdktn/provider-google-beta@17.0.0", "", { "peerDependencies": { "cdktn": "^0.22.0", "constructs": "^10.4.2" } }, "sha512-vaPiVfsbYHAN5IQ/Hnbfchk9Eg8ibNWpV6z8RY9js8epDf0u9V61uW+gCluXlS37vAXNCV97B97gOJ3r4P5rJg=="],
 
-    "@cdktn/provider-random": ["@cdktn/provider-random@13.0.0", "", { "peerDependencies": { "cdktn": "^0.22.0", "constructs": "^10.4.2" } }, "sha512-vMX9DN4T/qMA6IvL3RXV3u+Td3EPqtLMkgF91H7CObIOeNkEnKD/TLfatipcmL7l6sd/4lN5OzTsJT9u1fppSQ=="],
+    "@cdktn/provider-random": ["@cdktn/provider-random@14.0.0", "", { "peerDependencies": { "cdktn": "^0.23.0", "constructs": "^10.6.0" } }, "sha512-B1mQY2EBvcQGz6BbqWG7bFqqtOCkDtItuEZ6lyl8PxGU3PHt/oYWrRTkc3LIdHmu7zywFUn9+JICUa0vOb9agw=="],
 
     "@types/node": ["@types/node@25.6.0", "", { "dependencies": { "undici-types": "~7.19.0" } }, "sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ=="],
 
