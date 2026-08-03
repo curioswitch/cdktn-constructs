@@ -22,7 +22,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.4.12",
     "@cdktn/provider-github": "^17.0.0",
-    "@cdktn/provider-google": "^17.0.0",
+    "@cdktn/provider-google": "^19.0.0",
     "@cdktn/provider-google-beta": "^17.0.0",
     "@cdktn/provider-random": "^13.0.0",
     "@types/node": "^25.0.0",
