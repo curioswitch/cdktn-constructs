@@ -10,7 +10,7 @@
     "format": "biome check --write --unsafe . && prettier --write '**/*.yaml' '**/*.md'",
     "lint": "biome check . && prettier --check '**/*.yaml' '**/*.md'"
   },
-  "packageManager": "bun@1.2.2",
+  "packageManager": "bun@1.4.4",
   "peerDependencies": {
     "@cdktn/provider-github": "^16.0.0 || ^17.0.0 || ^18.0.0",
     "@cdktn/provider-google": "^17.0.0",
