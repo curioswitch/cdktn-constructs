@@ -8,7 +8,7 @@
         "@biomejs/biome": "^2.4.12",
         "@cdktn/provider-github": "^19.0.0",
         "@cdktn/provider-google": "^19.0.0",
-        "@cdktn/provider-google-beta": "^17.0.0",
+        "@cdktn/provider-google-beta": "^22.0.0",
         "@cdktn/provider-random": "^16.0.0",
         "@types/node": "^26.0.0",
         "cdktn": "^0.25.0",
@@ -49,7 +49,7 @@
 
     "@cdktn/provider-google": ["@cdktn/provider-google@19.10.0", "", { "peerDependencies": { "cdktn": "^0.23.0", "constructs": "^10.6.0" } }, "sha512-UgjpyF4kWwo/WHaoD8NVGTNvRUDF5lgD/i0cjcU9p9WOid0gi0ENvBMer1WYTfyruyFce2ZqlAUT2YoNv94I2A=="],
 
-    "@cdktn/provider-google-beta": ["@cdktn/provider-google-beta@17.0.0", "", { "peerDependencies": { "cdktn": "^0.22.0", "constructs": "^10.4.2" } }, "sha512-vaPiVfsbYHAN5IQ/Hnbfchk9Eg8ibNWpV6z8RY9js8epDf0u9V61uW+gCluXlS37vAXNCV97B97gOJ3r4P5rJg=="],
+    "@cdktn/provider-google-beta": ["@cdktn/provider-google-beta@22.0.0", "", { "peerDependencies": { "cdktn": "^0.25.0", "constructs": "^10.6.0" } }, "sha512-/lZxErOxwnbyAZm/1Ugf7fEPxKJCd5eg5GsKG6z/RV+d2v1r92K/SUx351HmaiL4srR8S4DHZUnbada6v29S7Q=="],
 
     "@cdktn/provider-random": ["@cdktn/provider-random@16.0.0", "", { "peerDependencies": { "cdktn": "^0.25.0", "constructs": "^10.6.0" } }, "sha512-3pT0UaD3fKlbwTQzEZzIw9/kmZ2X/hi65sf8A02m2TH4NbuFPVejJuLDZXlg/MBMolr622+LTtJhBgh2XTLd8g=="],
 
