@@ -16,7 +16,7 @@
     "@cdktn/provider-google": "^17.0.0",
     "@cdktn/provider-google-beta": "^17.0.0",
     "@cdktn/provider-random": "^13.0.0 || ^16.0.0",
-    "cdktn": "^0.23.0-pre.29",
+    "cdktn": "^0.23.0-pre.29 || ^0.25.0",
     "constructs": "^10.6.0"
   },
   "devDependencies": {
