@@ -7,7 +7,7 @@
       "devDependencies": {
         "@biomejs/biome": "^2.4.12",
         "@cdktn/provider-github": "^19.0.0",
-        "@cdktn/provider-google": "^19.0.0",
+        "@cdktn/provider-google": "^22.0.0",
         "@cdktn/provider-google-beta": "^22.0.0",
         "@cdktn/provider-random": "^16.0.0",
         "@types/node": "^26.0.0",
@@ -18,7 +18,7 @@
       },
       "peerDependencies": {
         "@cdktn/provider-github": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-        "@cdktn/provider-google": "^17.0.0",
+        "@cdktn/provider-google": "^17.0.0 || ^22.0.0",
         "@cdktn/provider-google-beta": "^17.0.0",
         "@cdktn/provider-random": "^13.0.0 || ^16.0.0",
         "cdktn": "^0.23.0-pre.29 || ^0.25.0",
@@ -47,7 +47,7 @@
 
     "@cdktn/provider-github": ["@cdktn/provider-github@19.0.0", "", { "peerDependencies": { "cdktn": "^0.25.0", "constructs": "^10.6.0" } }, "sha512-BXG6BAkb7wwQFEIs+aNAVqS/gg6NgOy6l+e/rHY8c7v4vZU14L+PAqp6/LNgY6XDO6thYv/uvMSvVb/Ikpmlmw=="],
 
-    "@cdktn/provider-google": ["@cdktn/provider-google@19.10.0", "", { "peerDependencies": { "cdktn": "^0.23.0", "constructs": "^10.6.0" } }, "sha512-UgjpyF4kWwo/WHaoD8NVGTNvRUDF5lgD/i0cjcU9p9WOid0gi0ENvBMer1WYTfyruyFce2ZqlAUT2YoNv94I2A=="],
+    "@cdktn/provider-google": ["@cdktn/provider-google@22.0.1", "", { "peerDependencies": { "cdktn": "^0.25.0", "constructs": "^10.6.0" } }, "sha512-m90mzknqUBPf1avZgnYuaY5HJI0GpzxzpPZvq/zswfsUmR0QLnQCWewP1hKNpuVUtobaoVYYYP+XzJb4xk3Eag=="],
 
     "@cdktn/provider-google-beta": ["@cdktn/provider-google-beta@22.0.0", "", { "peerDependencies": { "cdktn": "^0.25.0", "constructs": "^10.6.0" } }, "sha512-/lZxErOxwnbyAZm/1Ugf7fEPxKJCd5eg5GsKG6z/RV+d2v1r92K/SUx351HmaiL4srR8S4DHZUnbada6v29S7Q=="],
 
